@@ -1,2 +1,3 @@
 # lab1
-Java labs
+Java laboratory project #1
+Unknown variant
