@@ -10,7 +10,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		Interface gui = new Interface(primaryStage);
-		gui.Create();
+		gui.сreate();
 	}
 	
 	public static void main(String[] args) {

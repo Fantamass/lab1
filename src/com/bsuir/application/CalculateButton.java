@@ -24,7 +24,7 @@ class CalculateButton extends Button{
 	private void buttonPressed(String addText, String resTest, String startText, String endText) {
 		try {
 	        Alert alert = new Alert(AlertType.INFORMATION);
-	        alert.setTitle("Подбор корней");
+	        alert.setTitle("РџРѕРґР±РѕСЂ РєРѕСЂРЅРµР№");
 			int add = Integer.parseInt(addText);
 			int res = Integer.parseInt(resTest);
 			int start = Integer.parseInt(startText);
@@ -32,18 +32,18 @@ class CalculateButton extends Button{
 			
 			for(int i = start; i <= end; ++i)
 				if(i + add == res){
-			        alert.setHeaderText("Найденный корень: " + String.valueOf(i));
+			        alert.setHeaderText("РќР°Р№РґРµРЅРЅС‹Р№ РєРѕСЂРµРЅСЊ: " + String.valueOf(i));
 			        alert.showAndWait();
 			        return;
 				}
 	
-	        alert.setHeaderText("Невозможно подобраь корень");
+	        alert.setHeaderText("РќРµРІРѕР·РјРѕР¶РЅРѕ РїРѕРґРѕР±СЂР°СЊ РєРѕСЂРµРЅСЊ");
 	        alert.showAndWait();	
 		}
 		catch(Exception e){
 	        Alert alert = new Alert(AlertType.ERROR);
-	        alert.setTitle("Ошибка");
-	        alert.setHeaderText("Неверные данные");
+	        alert.setTitle("РћС€РёР±РєР°");
+	        alert.setHeaderText("РќРµРІРµСЂРЅС‹Рµ РґР°РЅРЅС‹Рµ");
 	        alert.showAndWait();
 		}
 	}

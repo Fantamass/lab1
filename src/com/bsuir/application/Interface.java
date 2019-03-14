@@ -15,9 +15,9 @@ public class Interface {
 		this.primaryStage = primaryStage;
 	}
 	
-	public void Create () {
+	public void СЃreate () {
 		try {
-			primaryStage.setTitle("ПроРешатель");
+			primaryStage.setTitle("РџСЂРѕР РµС€Р°С‚РµР»СЊ");
 			FlowPane root = new FlowPane  ();
 			root.setPadding(new Insets(10, 10, 10, 10)); 
 			root.setVgap(5); 
@@ -27,9 +27,9 @@ public class Interface {
 			
 			Text labelAdd = new Text("x +");
 			Text labelSum = new Text("=");
-			Text labelFrom = new Text("Начало интервала");
-			Text labelTill = new Text("Конец интервала");
-			Text labelRes = new Text("Корень 3");
+			Text labelFrom = new Text("РќР°С‡Р°Р»Рѕ РёРЅС‚РµСЂРІР°Р»Р°");
+			Text labelTill = new Text("РљРѕРЅРµС† РёРЅС‚РµСЂРІР°Р»Р°");
+			Text labelRes = new Text("РљРѕСЂРµРЅСЊ 3");
 
 		    TextField textAdd = new TextField();       		      
 		    TextField textSum = new TextField();
@@ -38,7 +38,7 @@ public class Interface {
 		    TextField textTill = new TextField();  
 		    textTill.setPrefWidth(225);
 		    
-		    CalculateButton button = new CalculateButton("Подобрать корень"); 
+		    CalculateButton button = new CalculateButton("РџРѕРґРѕР±СЂР°С‚СЊ РєРѕСЂРµРЅСЊ"); 
 		    button.setOnMouseClicked(textAdd, textSum, textFrom, textTill);
 	    
 		    root.getChildren().addAll(labelAdd, textAdd, labelSum, textSum, labelFrom, textFrom, labelTill, textTill, labelRes, button);
